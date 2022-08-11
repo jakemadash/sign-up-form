@@ -54,3 +54,16 @@ html {
     top: 5px;
     right: 5px;
   }
+
+  .aligned {
+    margin-left: 30px;
+    margin: 30px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 100px;
+  }
