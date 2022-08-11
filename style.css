@@ -27,6 +27,7 @@ html {
   }
 
   .sidebar {
-    height: 100%;
+    height: 100vh;
     width: 40%;
+    background: border-box url('snowdonia.jpg') center/cover;
   }
