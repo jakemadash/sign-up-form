@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -45,13 +46,15 @@
 
                 <div>
                     <label for="password">Password</label><br>
-                    <input type="password" id="password" name="password"><br>
+                    <input type="password" id="password" name="password" class="error"><br>
                 </div>
 
                 <div>
                     <label for="password-confirm">Confirm Password</label><br>
-                    <input type="password" id="password-confirm" name="password-confirm"><br>
+                    <input type="password" id="password-confirm" name="password-confirm" class="error"><br>
                 </div>
+
+                <div id="error">* Passwords do not match</div>
             </form>
         </div>
         <div>

@@ -36,7 +36,7 @@ html {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
-    color: rgb(85, 85, 85);
+    color: rgb(67, 66, 66);
     text-transform: uppercase;
     box-shadow: 5px 5px 8px rgb(198, 196, 196);
   }
@@ -44,6 +44,8 @@ html {
   input {
     margin: 0 30px 10px 0;
     border-style: solid;
+    border-width: 0.3ch;
+    border-radius: 3px;
     border-color: rgb(219, 219, 219);
     width: 250px;
     height: 30px;
@@ -104,4 +106,27 @@ html {
     top: 10px;
     text-transform: none;
     color: black;
+  }
+
+  input:not(.error):focus {
+    border-color: rgb(121, 220, 231);
+    box-shadow: 2px 2px 8px rgb(198, 196, 196);
+    outline: none;
+  }
+
+  input.error:focus {
+    outline: none;
+  }
+
+  .error {
+    border-color: red;
+  }
+
+  #error {
+    position: absolute;
+    bottom: 24px;
+    left: 43px;
+    color: red;
+    font-size: .7rem;
+    text-transform: none;
   }
