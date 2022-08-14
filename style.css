@@ -59,6 +59,12 @@ html {
     padding: 0px 0px;
   }
 
+  @-moz-document url-prefix() {
+    button {
+        width: 13rem;
+    }
+  }
+
   button, .right-side > :nth-child(-n+2), form > :first-child, .right-side > :last-child {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
