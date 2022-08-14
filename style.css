@@ -71,8 +71,8 @@ html {
   }
 
   .sidebar {
-    height: 100vh;
-    width: 40%;
+    min-height: 100vh;
+    width: 40vw;
     background: border-box url('snowdonia.jpg') center/cover;
     position: relative;
   }
@@ -102,7 +102,6 @@ html {
   .aligned {
     margin-left: 30px;
     margin: 30px;
-    
   }
 
   .right-side {
@@ -112,6 +111,7 @@ html {
     justify-content: center;
     padding-right: 150px;
     width: 60%;
+    min-height: 0;
     background-color: rgb(240, 246, 246);
   }
 
@@ -148,4 +148,16 @@ html {
     color: red;
     font-size: .7rem;
     text-transform: none;
+  }
+
+  .right-side > :last-child {
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0rem;
+  }
+
+  .right-side > :last-child a {
+    color: rgb(128, 0, 98);
+    padding: 0;
+    font-weight: 600;
   }
